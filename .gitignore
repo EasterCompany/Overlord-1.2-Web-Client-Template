@@ -1,17 +1,35 @@
 
-# Developer Envrionment (Temp)
+# Developer Envrionment
 .vscode/
+.idea/
 
 # Overlord (Files)
 /o
 *.key
+/web/urls.py
+api/migrations/*.py
+!api/migrations/__init__.py
 
 # Overlord (Directories)
-.logs
-.config
-static
-migrations
-src/shared
+.logs/*
+.config/*
+.temp/*
+clients/*/build/*
+clients/*/src/shared/*
+static/*
+static/.temp/*
+static/assets/users/*
+build/
+# ---
+!static/admin/
+!static/default_react/
+
+# Overlord (Clients)
+clients/
+!clients/admin/
+!clients/default_angular/
+!clients/default_react/
+!clients/shared/
 
 # Sqlite (Files)
 *.sqlite3
@@ -22,7 +40,6 @@ src/shared
 __pycache__
 
 # Logs (Temp)
-logs
 *.log
 npm-debug.log*
 yarn-debug.log*
@@ -33,9 +50,8 @@ lerna-debug.log*
 *.tsbuildinfo
 
 # NPM (Temp)
-.npm
 .env
-build
+.npm
 node_modules
 
 # ESlint (Temp)
