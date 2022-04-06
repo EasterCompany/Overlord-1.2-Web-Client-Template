@@ -51,7 +51,9 @@ lerna-debug.log*
 
 # NPM (Temp)
 .env
+/env
 .npm
+/npm
 node_modules
 
 # ESlint (Temp)
