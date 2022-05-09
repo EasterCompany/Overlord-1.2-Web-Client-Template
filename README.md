@@ -3,8 +3,8 @@
     <p align="center" style="border-bottom:0px;"> [OVERLORD/CLIENTS] </p>
     <h1 align="center" style="margin-bottom:8vh;border-bottom:0px;"> {app_name} </h1>
     <div>
-        <h4 align="left"> ⋄ Git Repository ⋄ </h4>
-        <p align="left">
+        <h4 align="center"> ⋄ Git Repository ⋄ </h4>
+        <p align="center">
             <b> NAME </b>:
             <b style="font-weight:300;">{app_name}</b>
             <br/>
