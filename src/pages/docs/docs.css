@@ -5,10 +5,9 @@
 
   width: 300px;
   max-width: 300px;
-  height: 95vh;
-  max-height: 95vh;
-
-  padding-top: 5vh;
+  height: 100vh;
+  max-height: calc(100vh - 48px);
+  margin-top: auto;
   filter: drop-shadow(50 1 50 black);
 
   overflow-y: auto;
@@ -17,9 +16,10 @@
 }
 
 .title {
-  color: white;
+  pointer-events: none;
+  color: rgb(198, 201, 207);
   text-align: left;
-  padding: 64px 0 16px 8px;
+  padding: 48px 0 16px 8px;
 
   border: 1px solid rgb(192, 192, 192);
   border-top: 0;
@@ -27,17 +27,64 @@
 }
 
 .item {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
   font-size: calc(10px + 1.25vmin);
-  color: white;
+  color: rgb(229, 232, 238);
   text-align: left;
   padding: 4px 32px;
 
-  border: 1px solid rgb(192, 192, 192);
+  border: 1px solid rgb(163, 163, 163);
   border-top: 0;
   border-left: 0;
 }
 
-.doc-content {
-  width: 100%;
+.item:hover {
+  background-color: rgba(141, 141, 141, 0.5);
+}
+
+.doc-container {
+  width: 95%;
+  height: calc(100vh - 48px);;
   margin: 2.5% 0;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+.doc-content {
+  min-height: calc(95vh - 48px);
+  margin: 0 5% 5% 5%;
+  padding: 2.5%;
+  border-radius: 15px;
+  background-color: white;
+}
+
+.doc-content>h1,
+.doc-content>h2,
+.doc-content>h3,
+.doc-content>h4,
+.doc-content>h5,
+.doc-content>h6 {
+  margin: 5%;
+  text-align: left;
+}
+
+.doc-content>p {
+  font-size: medium;
+  margin: 2% 5% 2% 5%;
+  width: 90%;
+  max-width: unset;
+  text-align: left;
+}
+
+.footer {
+  font-size: small;
+  color: rgb(229, 232, 238);
+  margin: auto auto 16px auto;
+}
+
+.footer:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

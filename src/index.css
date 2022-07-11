@@ -59,7 +59,7 @@ header>a {
 
   height: 100vh;
 
-  color: white;
+  color: rgb(40, 44, 52);
   background-color: #e5e7eb;
   font-size: calc(10px + 2vmin);
 }
