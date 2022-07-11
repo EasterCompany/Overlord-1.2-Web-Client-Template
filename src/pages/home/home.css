@@ -1,0 +1,14 @@
+
+p {
+  margin: 2% 2% 10% 2%;
+  max-width: 800px;
+}
+
+.link {
+  color: #61dafb;
+}
+
+.logo {
+  height: 40vmin;
+  pointer-events: none;
+}

@@ -1,3 +1,6 @@
+# .gitignore
+#   This file is standardised across all Overlord clients and projects - however unlikely; it may be needed to add your
+#   own options. If you add your own options, please consider how this may affect your project as a whole.
 
 # Developer Envrionment
 .vscode/
@@ -21,14 +24,11 @@ static/.temp/*
 static/assets/users/*
 build/
 # ---
-!static/admin/
-!static/default_react/
+!static/e_panel/
 
 # Overlord (Clients)
 clients/
-!clients/admin/
-!clients/default_angular/
-!clients/default_react/
+!clients/e_panel/
 !clients/shared/
 
 # Sqlite (Files)
@@ -54,7 +54,17 @@ lerna-debug.log*
 /env
 .npm
 /npm
-node_modules
+node_modules/
+.expo/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
 
 # ESlint (Temp)
 .eslintcache
