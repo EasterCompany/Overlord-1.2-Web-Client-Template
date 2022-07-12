@@ -38,14 +38,11 @@ import './index.css';
 import Routes from './routes';
 import Navbar from './components/navbar';
 
-// Pages & Views
-import Home from './pages/home/home';
-
-// Server Side Rendering
+// SERVER SIDE RENDERING
 const _targetFunc = () => {
   if (document.getElementById("root")?.hasChildNodes())
-    return hydrate;
-  return render;
+    return hydrate
+  return render
 }
 const targetFunc = _targetFunc()
 
@@ -56,7 +53,7 @@ targetFunc(
       <div id="article">
         <Navbar />
         <div id="article-content">
-            <Routes />
+          <Routes />
         </div>
       </div>
     </Router>

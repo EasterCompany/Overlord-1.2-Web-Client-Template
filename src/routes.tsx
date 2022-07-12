@@ -1,11 +1,14 @@
 // Local Apps ---------------------
+
 // Default Home Page
 import Home from './pages/home/home';
 // Documentation / Example Page
 import Documentation from './pages/docs/docs';
-// Locals Apps error imports ------
+
+// Error Response Pages
 import PageNotFoundError from './pages/error/404';
-// Local imports ------------------
+
+// Shared imports ------------------
 import { Route, Switch } from './shared/components/routes/routes';
 
 
@@ -13,8 +16,11 @@ import { Route, Switch } from './shared/components/routes/routes';
 const Routes = () => {
   return <Switch>
 
-    { // [HOME] Default Page
-      Route({path: '', app: Home})
+    { // [DEFAULT] Home Page
+      Route({
+        path: '',
+        app: Home
+      })
     }
 
     { // [DOCS] Documentation Page

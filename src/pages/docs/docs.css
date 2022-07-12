@@ -46,14 +46,14 @@
 
 .doc-container {
   width: 95%;
-  height: calc(100vh - 48px);;
+  min-height: 95vh;
   margin: 2.5% 0;
   overflow-y: auto;
   overflow-x: auto;
 }
 
 .doc-content {
-  min-height: calc(95vh - 48px);
+  min-height: 65%;
   margin: 0 5% 5% 5%;
   padding: 2.5%;
   border-radius: 15px;
@@ -66,7 +66,7 @@
 .doc-content>h4,
 .doc-content>h5,
 .doc-content>h6 {
-  margin: 5%;
+  margin: 2% 5%;
   text-align: left;
 }
 

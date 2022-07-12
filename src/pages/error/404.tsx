@@ -1,7 +1,14 @@
+import errorImg from '../../assets/error.svg';
 
-const PageNotFoundError = () => <div className="page-content">
-  <h2>ERROR 404</h2>
-  <h3>Page Not Found</h3>
+
+const PageNotFoundError = () => <div className="error-page-content">
+  <img
+    src={errorImg}
+    width="10%"
+    alt="error"
+  />
+  <h2>Sorry!</h2>
+  <h3>We can't find the page you're looking for.</h3>
 </div>
 
 
