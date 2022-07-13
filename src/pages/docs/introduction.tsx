@@ -2,7 +2,7 @@
 const Introduction = () => <>
   <h1>Welcome to Overlord!</h1>
   <div className="doc-content">
-    <h3>Introduction</h3>
+    <h2>Introduction</h2>
     <p>
       The Overlord Framework is a full stack endeavour utilizing <b>Python & TypeScript</b> in unison.
       Your project begins with a `Django Web Server` and ends with either a
@@ -51,6 +51,19 @@ const Introduction = () => <>
       based client option you will need to refer to their developer environment setup guide which you can find here:
       <br/><br/>
       <a href="https://reactnative.dev/docs/environment-setup">React-Native Setup Guide</a>
+    </p>
+    <h3>Getting started</h3>
+    <p>
+      To begin, just clone the <a href="https://www.github.com/EasterCompany/Overlord">Overlord</a> repository from
+      github into your local environment.<br/>
+      <br/>
+      <b>SHH</b>: <code>git clone git@github.com:EasterCompany/Overlord.git</code>
+      <br/><br/>
+      <b>CLI</b>: <code>gh repo clone EasterCompany/Overlord</code><br/>
+      <br/>
+      navigate into the repository you just cloned and then run the install command:<br/>
+      <br/>
+      <b>INSTALL</b>: <code>python3 run.py tools install</code>
     </p>
   </div>
 </>

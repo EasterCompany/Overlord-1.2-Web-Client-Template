@@ -4,6 +4,8 @@ import linkImg from '../../assets/link.svg';
 
 import Introduction from './introduction';
 import ServerToolsDoc from './toolsDocs/serverToolsDoc';
+import ClientToolsDoc from './toolsDocs/clientToolsDoc';
+import UnitTestDoc from './toolsDocs/unitTestDoc';
 
 const btnSelected = 'rgba(191, 191, 191, 0.25)';
 
@@ -19,6 +21,8 @@ const Documentation = () => {
 
     {/* Tools */}
     {selectedDocument === 'Server Tools' ? <ServerToolsDoc/> : <></>}
+    {selectedDocument === 'Client Tools' ? <ClientToolsDoc/> : <></>}
+    {selectedDocument === 'Unit Tests' ? <UnitTestDoc/> : <></>}
 
     </div>
   </div>

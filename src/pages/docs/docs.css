@@ -76,6 +76,12 @@
   width: 90%;
   max-width: unset;
   text-align: left;
+  align-content: center;
+}
+
+.doc-content>p>img {
+  width: 80%;
+  padding: 32px 10%;
 }
 
 .footer {
