@@ -1,81 +1,24 @@
 # .gitignore
-#   This file is standardised across all Overlord clients and projects - however unlikely; it may be needed to add your
-#   own options. If you add your own options, please consider how this may affect your project as a whole.
+#  Standardised Overlord Web Client gitingore file
+#  You may need to add your own exceptions
 
-# Developer Envrionment
+# Developer
 .vscode/
 .idea/
 
-# Overlord (Files)
-/o
-*.key
-/web/urls.py
-api/migrations/*.py
-!api/migrations/__init__.py
-
-# Overlord (Directories)
-.logs/*
-.config/*
-.temp/*
-clients/*/build/*
-clients/*/src/shared/*
-static/*
-static/.temp/*
-static/assets/users/*
-build/
-# ---
-!static/e_panel/
-
-# Overlord (Clients)
-clients/
-!clients/e_panel/
-!clients/shared/
-
-# Sqlite (Files)
-*.sqlite3
-*.sqlite3-journal
-
-# Python (Temp)
+# Python
 .pytest_cache
 __pycache__
 
-# Logs (Temp)
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
-
-# TypeScript (Temp)
-*.tsbuildinfo
-
-# NPM (Temp)
+# Node & NPM
 .env
-/env
-.npm
-/npm
-node_modules/
-.expo/
-dist/
-npm-debug.*
-*.jks
-*.p8
-*.p12
-*.key
-*.mobileprovision
-*.orig.*
+build/
 web-build/
+node_modules/
+*.tsbuildinfo
+*.log
+*.key
 
-# ESlint (Temp)
-.eslintcache
-
-# Misc (Files)
-.DS_Store
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
-
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Shared
+src/shared/*
+!src/shared/components/routes/routes.tsx

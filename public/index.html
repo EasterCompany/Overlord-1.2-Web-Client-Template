@@ -1,33 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
-    <link
-      rel="icon"
-      href="%PUBLIC_URL%/static/{#app_name#}/favicon.ico"
-    />
-    <link
-      rel="manifest"
-      href="%PUBLIC_URL%/{#app_name#}/manifest.json"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="%PUBLIC_URL%/static/{#app_name#}/media/logo192.png"
-    />
-
+    <script src="https://use.fontawesome.com/9cc341d6c1.js"></script>
+    <link rel="icon" href="%PUBLIC_URL%/static/{#app_name#}/favicon.ico"/>
+    <link rel="manifest" href="%PUBLIC_URL%/{#app_name#}/manifest.json"/>
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/static/{#app_name#}/media/logo192.png"/>
     <meta charset="utf-8"/>
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000" />
     <meta name="description" content="{#app_description#}" />
     <meta property="og:updated_time" content="{#time_of_last_build#}"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    <meta name="robots" content="all">
+    <meta name="googlebot" content="all">
     <title>{#app_name#}</title>
-
   </head>
-
   <body>
+    <style>
+      #global-django-tags { display: none; }
+    </style>
+    <p id="global-django-tags">
+      {% load static %}
+    </p>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
   </body>
-
 </html>
