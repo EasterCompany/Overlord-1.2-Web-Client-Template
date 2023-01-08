@@ -9,7 +9,7 @@ Overlord client repository for {app_name}
 
 ## Setup Instructions
 
-To install this client in your Overlord environment run the following command from inside Overlords root directory
+To install this client into your Overlord environment run the following command from inside Overlord-CLI
 
 ```bash
 ./o create -git@github.com:___git_user_here___/{app_name}.git
