@@ -1,6 +1,16 @@
+# {app_name} (Client)
 
-<div style="margin:128px 0 128px 0;">
-    <p align="center" style="border-bottom:0px;"> [OVERLORD-REACT-CLIENT] </p>
-    <br/>
-    <h1 align="center" style="margin-bottom:8vh;border-bottom:0px;"> {app_name} </h1>
-</div>
+Overlord client repository for {app_name}
+
+## Specification
+
+- React Web Client
+- Overlord Framework
+
+## Setup Instructions
+
+To install this client in your Overlord environment run the following command from inside Overlords root directory
+
+```bash
+./o create -git@github.com:___git_user_here___/{app_name}.git
+```
