@@ -17,7 +17,7 @@ class Client(client.WebClient):
 
     # Client.NAME represents what the stylized name of this client should be
     # for example; this is often used to set the HTML <title> element content
-    NAME = 'app-name'
+    NAME = DIR
 
     # Client.PORT by default will be automatically determined if PORT is None;
     # otherwise you can specify a port number as a string.
