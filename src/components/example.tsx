@@ -2,8 +2,8 @@
   The Example component is simply a placeholder example to demonstrate how to use Components in React and Overlord.
   You probably want to delete this component before building your application unless you are still learning React.
 */
-
 import logo from '../assets/logo.png';
+
 
 const Example = () => {
   return <>
@@ -22,5 +22,6 @@ const Example = () => {
     </a>
   </>
 }
+
 
 export default Example;

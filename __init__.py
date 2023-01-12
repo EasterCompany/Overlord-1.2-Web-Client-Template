@@ -3,7 +3,7 @@
 #   Imports may show errors prior to installing this client. Follow the README.md for more.
 
 # Overlord library
-from core.library import client
+from core.library import client, Path, dirname, realpath
 
 
 class Client(client.WebClient):
@@ -13,7 +13,7 @@ class Client(client.WebClient):
 
     # Client.DIR represents which sub-directory inside the 'clients/'
     # directory contains the source code for this client
-    DIR = 'app-name'
+    DIR = Path(dirname(realpath(__file__))).parts[-1]
 
     # Client.NAME represents what the stylized name of this client should be
     # for example; this is often used to set the HTML <title> element content
