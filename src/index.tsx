@@ -14,7 +14,7 @@ import Navbar from './components/navbar';
 const App = () => <>
   <Router>
     <Navbar />
-    <div id="site-container">
+    <div id="web-app-container">
       <Routes />
     </div>
   </Router>
@@ -22,7 +22,7 @@ const App = () => <>
 
 
 // Rendering Method
-const rootEl = document.getElementById('root') as HTMLElement;
+const rootEl = document.getElementById('web-app-root-container') as HTMLElement;
 if (rootEl.hasChildNodes()) {
   ReactDOM.hydrateRoot(rootEl, <App/>);
 } else {

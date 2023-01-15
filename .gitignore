@@ -12,6 +12,7 @@ __pycache__
 
 # Node & NPM
 .env
+.env.*
 build/
 web-build/
 node_modules/
@@ -21,4 +22,3 @@ node_modules/
 
 # Shared
 src/shared/*
-!src/shared/components/routes/routes.tsx

@@ -1,0 +1,7 @@
+{
+  "path": "clients/overlord_web_client/src/shared",
+  "file": [],
+  "module": [
+    "/components/routes/"
+  ]
+}
