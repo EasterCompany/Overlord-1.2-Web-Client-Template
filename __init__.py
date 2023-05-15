@@ -27,6 +27,6 @@ class Client(client.WebClient):
     # progressive web app features
     PWA:bool = False
 
-    # Client.INDEX is a string which contains the contents of the static index
-    # file built for this client
-    INDEX:str|None = None
+    def __context__(self, req, *args, **kwargs) -> dict:
+        ''' Generates a context dictionary which is provided to the HTML Template '''
+        return {}
