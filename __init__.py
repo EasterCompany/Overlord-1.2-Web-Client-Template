@@ -32,31 +32,14 @@ class Client(client.WebClient):
 
   def __urls__(self, *args, **kwargs) -> list:
     '''
-    Generates an additional url map for this client, for example:
-
-      [
-        self.path("script.js", self.serve_file("script.js"), "serves the script.js file"),
-        ...
-      ]
-
-    :param self: the client class
-    :return list: the additional url map
+    Generates an additional url map for this client, each item should use the self.path
+    function to create an endpoint.
     '''
     return []
 
   def __context__(self, req, *args, **kwargs) -> dict:
     '''
-    Generates a context dictionary which is provided to the HTML Template, for example:
-
-      {
-        'page_title': 'some page title',
-        ...
-      }
-
-      then sets the {{ page_title }} tag in the index.html file to 'some page title'
-
-    :param self: the client class
-    :param req: the user request object
-    :return dict: the context dictionary
+    Generates a context dictionary which is provided to the HTML Template, each item can
+    be rendered inside the index.html file by using {{ handle_bar }} variables.
     '''
     return {}
