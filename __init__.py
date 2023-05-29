@@ -39,7 +39,7 @@ class Client(client.WebClient):
 
   def __context__(self, req, *args, **kwargs) -> dict:
     '''
-    Generates a context dictionary which is provided to the HTML Template, each item can
-    be rendered inside the index.html file by using {{ handle_bar }} variables.
+    Generates a context dictionary which is provided to the HTML Template, each value can
+    be rendered inside the index.html file by calling the key with {{ handle_bar }} variables.
     '''
     return {}
