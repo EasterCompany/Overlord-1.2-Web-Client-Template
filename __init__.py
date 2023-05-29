@@ -30,6 +30,10 @@ class Client(client.WebClient):
   def __init__(self) -> None:
     super().__init__()
 
+  def __urls__(self, *args, **kwargs) -> list:
+    ''' Generates a list of paths which should be directly accessible by urls '''
+    return []
+
   def __context__(self, req, *args, **kwargs) -> dict:
     ''' Generates a context dictionary which is provided to the HTML Template '''
     return {}
