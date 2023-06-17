@@ -3,25 +3,27 @@ import * as ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from "react-router-dom";
 // Assets
 import './index.css';
-// Library
-import * as serviceWorkerRegistration from './library/serviceWorkerRegistration';
 // Components
 import Routes from './routes';
 import Navbar from './components/navbar';
+// Library
+import { isTemplateTag } from './shared/library/devTools';
+import * as serviceWorkerRegistration from './library/serviceWorkerRegistration';
 
+/* React Application Layout */
+const App = () => <Router>
+  <Navbar/>
+  <Routes/>
+</Router>
 
-// Application Root Component
-const App = () => <>
-  <Router>
-    <Navbar />
-    <div id="web-app-container">
-      <Routes />
-    </div>
-  </Router>
-</>
+/* Dev Mode Compatibility */
+const docHead = document.querySelector('head') as HTMLElement;
+if (docHead !== undefined && docHead !== null)
+  docHead.style.display = 'hidden';
+if (isTemplateTag.test(document.title) && process.env.REACT_APP_NAME !== undefined)
+  document.title = `[DEV] ${process.env.REACT_APP_NAME}`;
 
-
-// Rendering Method
+/* Renders React App */
 const rootEl = document.getElementById('web-app-root-container') as HTMLElement;
 if (rootEl.hasChildNodes()) {
   ReactDOM.hydrateRoot(rootEl, <App/>);
@@ -30,11 +32,6 @@ if (rootEl.hasChildNodes()) {
   root.render(<App/>);
 }
 
-/*
-  Progressive Web Application Setting
-  To enable or disable this configuration go to your clients
-  `__init__.py` in the root directory and set the `PWA` variable
-  to either True or False
-*/
+/* Toggles PWA Functionality */
 if (process.env.REACT_APP_PWA === 'true') serviceWorkerRegistration.register();
 else serviceWorkerRegistration.unregister();

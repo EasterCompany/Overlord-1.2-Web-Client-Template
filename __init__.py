@@ -1,8 +1,6 @@
 # Client __init__.py
-#   Edit this file to configure your integrations with this client and the Back End
-#   Imports may show errors prior to installing this client. Follow the README.md for more.
-
-# Overlord library
+#   Edit this file to configure your integrations with this Client and the Server/API
+#   Imports should be done within functions that use them to avoid initialization errors
 from core.library import Path, client, dirname, realpath
 
 
@@ -20,8 +18,8 @@ class Client(client.WebClient):
   NAME:str = DIR
 
   # Client.PORT by default will be automatically determined if PORT is None;
-  # otherwise you can specify a port number as a string.
-  PORT:str|None = None
+  # otherwise you can specify a port as an integer.
+  PORT:int|None = None
 
   # Client.PWA is a boolean which indicates whether or not to enable
   # progressive web app features
@@ -42,4 +40,8 @@ class Client(client.WebClient):
     Generates a context dictionary which is provided to the HTML Template, each value can
     be rendered inside the index.html file by calling the key with {{ handle_bar }} variables.
     '''
-    return {}
+    page = self.current_view(req)
+    page_title = "Example 404 Page" if page == "404" else self.NAME
+    return {
+      "page_title": page_title
+    }

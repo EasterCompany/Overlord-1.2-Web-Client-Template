@@ -1,8 +1,9 @@
 {
   "path": "clients/overlord_web_client/src/shared",
   "file": [
-    "/library/server/api.ts",
-    "/library/local/user.ts"
+    "/library/api.ts",
+    "/library/user.ts",
+    "/library/devTools.ts"
   ],
   "module": [
     "/components/routes/"
