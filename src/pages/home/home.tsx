@@ -78,7 +78,7 @@ const learnMoreBoxStyle : any = {
   justifyContent: 'space-evenly',
   width: '20vmin',
   height: '20vmin',
-  margin: '2.5vmin 2.5vmin',
+  margin: '2vmin 2vmin',
   borderRadius: '6px',
   border: '1px solid rgba(175,175,175,0.75)'
 }
