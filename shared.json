@@ -2,7 +2,6 @@
   "path": "clients/overlord_web_client/src/shared",
   "file": [
     "/library/api.ts",
-    "/library/user.ts",
     "/library/devTools.ts"
   ],
   "module": [
