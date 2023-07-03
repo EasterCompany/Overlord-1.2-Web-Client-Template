@@ -12,7 +12,7 @@ import epanelSVG from '../../assets/epanel.svg';
 const Home = () => <div className="home-content">
   <div style={overlordClientHeaderStyle}>
     <div style={{ textAlign: 'center', width: '65vmin', maxWidth: '1080px', paddingRight: '18px' }}>
-      <p>Welcome to your new Overlord Web Client,</p>
+      <p style={{ marginBottom: '2%' }}>Welcome to your new Overlord Web Client,</p>
       <h1 style={{ textTransform: 'uppercase' }}>{process.env.REACT_APP_NAME}</h1>
     </div>
     <img src={logoPNG} alt="logo" style={{ width: '25vmin', height: '25vmin' }}/>
